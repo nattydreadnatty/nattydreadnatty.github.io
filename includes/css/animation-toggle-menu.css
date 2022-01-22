@@ -1,0 +1,46 @@
+/* Animation the stroke-dashoffset to a zero length */
+@keyframes slideRight {
+    to {
+        left:60px;
+    }
+}
+@keyframes slideLeftMenuItem {
+    to {
+        left:-40vw;
+    }
+}
+
+@keyframes slideItemDot1 {
+    to {
+        transform:translateX(5px);
+        fill:#f6f5ae;
+    }
+}
+
+@keyframes slideItemDot2 {
+    to {
+        transform:translateX(5px);
+        fill:#e5a4cb;
+    }
+}
+
+@keyframes slideItemDot3 {
+    to {
+        transform:translateX(5px);
+        fill:#ffb000;
+    }
+}
+
+@keyframes slideItemDot4 {
+    to {
+        transform:translateX(5px);
+        fill:#3c91e6;
+    }
+}
+
+@keyframes slideItemDot5 {
+    to {
+        transform:translateX(5px);
+        fill:#342e37;
+    }
+}

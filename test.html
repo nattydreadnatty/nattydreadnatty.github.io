@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="lightweight jQuery plugin that enables parallax scrolling effect on elements">
+    <meta name="keywords"
+          content="paroller.js,jquery plugin,parallax,scrolling,parallax effect,jQuery,paroller,scroller,scrolling,paroller js,paroller jquery, paroller plugin">
+    <meta name="google-site-verification" content="TWTDG5sHkQOekIFUa5uWVmi7yO3pJTU7AGMaIPajIHc"/>
+    <title>paroller.js</title>
+    <script src="https://use.fontawesome.com/9576790a31.js"></script>
+
+</head>
+<body class="is-loading" style="height:3000px">
+
+
+            <h6 class="mega my-element"
+                data-paroller-factor="0.5"
+                data-paroller-factor-lg="0.4"
+                data-paroller-factor-md="0.3"
+                data-paroller-factor-sm="-0.2"
+                data-paroller-factor-xs="-0.1"
+                data-paroller-type="foreground"
+                data-paroller-direction="horizontal"
+                data-paroller-transition="transform .2s linear"
+            >
+                👋 Heola! こんにちは! Ahoj! Merhaba! Olá!
+            </h6>
+            
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<!--paroller.js-->
+<script src="includes/dist/jquery.paroller.js"></script>
+
+<script>
+    $(document)
+        .ready(function () {
+            //initialize paroller.js
+            $('[data-paroller-factor]').paroller();
+            //initialize paroller.js and set options for elements with .paroller class
+            $('.paroller-example').paroller({
+                factorXs: 0.1,
+                factorSm: 0.1,
+                factorMd: -0.4,
+                factorLg: -0.5,
+                factorXl: -0.6,
+                factor: -0.4,
+                type: 'foreground',
+                direction: 'horizontal',
+                transition: 'transform .3s ease-out'
+            });
+        });
+</script>
+
+</body>
+</html>

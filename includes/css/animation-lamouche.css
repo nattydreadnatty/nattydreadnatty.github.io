@@ -1,0 +1,307 @@
+/* Animation the stroke-dashoffset to a zero length */
+@keyframes slideleft {
+    to {
+        left:-100vw;
+    }
+}
+
+/* Animation the stroke-dashoffset to a zero length */
+@keyframes strokeOffset {
+    to {
+        stroke-dashoffset: -1500;
+    }
+}
+
+/* Animation hidden content */
+@keyframes display {
+    to {
+        margin-top:unset;
+    }
+}
+
+/* sliding container */
+#intro-container {
+    animation: slideleft 2s ease-out forwards;
+    animation-delay: 6s;
+}
+
+/* hidden content */
+#hidden-content{
+    margin-top:-1500px;
+    animation: display 0s ease-out forwards;
+    animation-delay: 8s;
+}
+
+/* mouche animation */
+.mask {
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+  }
+
+#mask-initiales-m.mask {
+
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+  }
+
+#mask-corps {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 0.2s;
+}
+
+#mask-aile_droite {
+    animation: strokeOffset 0.2s linear forwards;
+    animation-delay: 0.4s;
+}
+
+#mask-aile_gauche{
+    animation: strokeOffset 0.3s linear forwards;
+    animation-delay: 0.5s;
+}
+
+#mask-oeil_droite {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 0.7s;
+}
+
+#mask-oeil_gauche {
+    animation: strokeOffset 0.2s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+#mask-iris {
+    animation: strokeOffset 0.2s linear forwards;
+    animation-delay: 0.95s;
+}
+
+#mask-iris_color {
+    animation: strokeOffset 0.5s linear forwards;
+    animation-delay: 0.9s;
+}
+
+#mask-initiales-l {
+    animation: strokeOffset 0.3s ease-in forwards;
+    animation-delay: 1s;
+}
+
+#mask-initiales-m {
+    animation: strokeOffset 0.3s ease-out forwards;
+    animation-delay: 1.225s;
+}
+
+#mask-webdesigner-w {
+    animation: strokeOffset 0.3s ease-in  forwards;
+    animation-delay: 1.4s;
+}
+
+#mask-webdesigner-e1 {
+    animation: strokeOffset 0.1s ease-in  forwards;
+    animation-delay: 1.5s;
+}
+
+#mask-webdesigner-b {
+    animation: strokeOffset 0.3s ease-in forwards;
+    animation-delay: 1.6s;
+}
+
+#mask-webdesigner-d {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 1.7s;
+}
+
+#mask1-webdesigner-d {
+    animation: strokeOffset 0.3s linear forwards;
+    animation-delay: 1.75s;
+}
+
+#mask-webdesigner-e2 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 1.9s;
+}
+
+#mask-webdesigner-s {
+    animation: strokeOffset 0.3s ease-in forwards;
+    animation-delay: 2s;
+}
+
+#mask-webdesigner-i {
+    animation: strokeOffset 0.2s linear forwards;
+    animation-delay: 2.1s;
+}
+
+#mask1-webdesigner-i {
+    animation: strokeOffset 0.2s linear forwards;
+    animation-delay: 2.2s;
+}
+
+#mask-webdesigner-g {
+    animation: strokeOffset 0.3s ease-in-out forwards;
+    animation-delay: 2.3s;
+}
+
+#mask-webdesigner-n {
+    animation: strokeOffset 0.3s linear forwards;
+    animation-delay: 2.4s;
+}
+
+#mask-webdesigner-e3 {
+    animation: strokeOffset 0.3s ease-in forwards;
+    animation-delay: 2.5s;
+}
+
+#mask-webdesigner-r {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 2.6s;
+}
+
+#mask-dev-fullstack-d {
+    animation: strokeOffset 0.1s linear forwards;
+    animation-delay: 2.7s;
+}
+
+#mask1-dev-fullstack-d {
+    animation: strokeOffset 0.3s linear forwards;
+    animation-delay: 2.75s;
+}
+
+#mask-dev-fullstack-e4 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 2.8s;
+}
+
+#mask-dev-fullstack-v {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 2.9s;
+}
+
+#mask-dev-fullstack-e1 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 3s;
+}
+
+#mask-dev-fullstack-l3 {
+    animation: strokeOffset 0.2s linear forwards;
+    animation-delay: 3.1s;
+}
+
+#mask-dev-fullstack-o {
+    animation: strokeOffset 0.2s linear forwards;
+    animation-delay: 3.2s;
+}
+
+#mask-dev-fullstack-p1 {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 3.3s;
+}
+
+#mask1-dev-fullstack-p1 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 3.35s;
+}
+
+#mask-dev-fullstack-p2 {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 3.5s;
+}
+
+#mask1-dev-fullstack-p2 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 3.55s;
+}
+
+#mask-dev-fullstack-e3 {
+    animation: strokeOffset 0.5s ease-in forwards;
+    animation-delay: 3.6s;
+}
+
+#mask-dev-fullstack-u1 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 3.7s;
+}
+
+#mask-dev-fullstack-s1 {
+    animation: strokeOffset 0.3s ease-in forwards;
+    animation-delay: 3.8s;
+}
+
+#mask-dev-fullstack-e2 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 3.9s;
+}
+
+#mask-dev-fullstack-f {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 4s;
+}
+
+#mask1-dev-fullstack-f {
+    animation: strokeOffset 0.1s linear forwards;
+    animation-delay: 4.1s;
+}
+
+#mask2-dev-fullstack-f {
+    animation: strokeOffset 0.1s linear forwards;
+    animation-delay: 4.15s;
+}
+
+#mask-dev-fullstack-u2 {
+    animation: strokeOffset 0.3s ease-in forwards;
+    animation-delay: 4.3s;
+}
+
+#mask-dev-fullstack-l1 {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 4.4s;
+}
+
+#mask-dev-fullstack-l2 {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 4.5s;
+}
+
+#mask-dev-fullstack-s2 {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 4.6s;
+}
+
+#mask-dev-fullstack-t {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 4.7s;
+}
+
+#mask1-dev-fullstack-t {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 4.8s;
+}
+
+#mask2-dev-fullstack-t {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 4.8s;
+}
+
+#mask-dev-fullstack-a {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 4.9s;
+}
+
+#mask1-dev-fullstack-a {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 5s;
+}
+
+#mask-dev-fullstack-c {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 5.1s;
+}
+
+#mask-dev-fullstack-k {
+    animation: strokeOffset 0.1s ease-in forwards;
+    animation-delay: 5.2s;
+}
+
+#mask1-dev-fullstack-k {
+    animation: strokeOffset 0.2s ease-in forwards;
+    animation-delay: 5.3s;
+}
