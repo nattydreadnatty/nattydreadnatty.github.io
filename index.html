@@ -32,7 +32,7 @@
     </header>
     <!--------------------------------------------------------------------- MAIN ------------------------------------------------------------------------------>
     <main>
-  
+        <!--
         <div id="intro-container">
             <svg id="LaMouche" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1132.15 586.08">
                 <defs>
@@ -241,7 +241,7 @@
                 </g>
             </svg>
         </div>
-
+        -->
         <div id="main-content">
             <div id="toggle-menu">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" >
@@ -1350,7 +1350,10 @@
                               </g>
                             </g>
                           </svg>                                               
-                    </div>                     
+                    </div>  
+                    <div id="rouage-illust">
+                      <img id="rouage" src="includes/images/rouage.svg" alt="rouage" />
+                    </div>                   
                 </div>
                 <div id="accroche">
                     <h1 id="accroche-title"><span>W</span>ebDesigner & Développeuse Full Stack</h1>
@@ -1369,21 +1372,26 @@
                                 <h4>PSSST... NE CHERCHE PLUS... TU ES AU BON ENDROIT !</h4>
                             </div>
                         </div>
-                        <div id="accroche-content">
-                            <div id="accroche-content-background">
-                                <img src="includes/images/accroche-background.svg" alt="background jaune" />
-                            </div>
-                            <div id="accroche-content-title">
-                                <h2>Besoin de visibilité</h2>
-                                <h3>Pour booster ton business</h3>
-                            </div>
-                            <p>
-                                Tu t'apprêtes à donner vie à <span class="bold">ton projet d’entreprise</span>, mais l’univers de la communication t'est inconnu et tu ne sais pas par où commencer ? Tu viens de <span class="bold">démarrer ton activité</span> et tu souhaites <span class="bold">développer ta visibilité</span> pour attirer tes premiers clients ? Tu as <span class="bold">besoin d'une application spécifique</span> aux besoins de ton entreprise?
-                                <br/><br/>
-                                Si tu te reconnais, c’est que tu a frappé à la bonne porte !
-                                <br/><br/>
-                                Que ce soit pour créer ton <span class="bold">logo</span>, tes <span class="bold">outils de communication papier</span>, tes <span class="bold">supports web</span>, ton <span class="bold">site internet</span>, ou ton <span class="bold">application mobile ou desktop</span>, je mettrais tout en œuvre pour répondre à ta demande avec une proposition parfaitement adaptée à tes besoins et correspondant aux enjeux auxquels tu dois faire face.
-                            </p>
+                        <div id="accroche-flex-container">
+                          <div id="accroche-content-question">
+                            <img src="includes/images/question.svg" alt="point d'interrogation" />
+                          </div>
+                          <div id="accroche-content">
+                              <div id="accroche-content-background">
+                                  <img src="includes/images/accroche-background.svg" alt="background jaune" />
+                              </div>
+                              <div id="accroche-content-title">
+                                  <h2>Besoin de visibilité</h2>
+                                  <h3>Pour booster ton business</h3>
+                              </div>
+                              <p>
+                                  Tu t'apprêtes à donner vie à <span class="bold">ton projet d’entreprise</span>, mais l’univers de la communication t'est inconnu et tu ne sais pas par où commencer ? Tu viens de <span class="bold">démarrer ton activité</span> et tu souhaites <span class="bold">développer ta visibilité</span> pour attirer tes premiers clients ? Tu as <span class="bold">besoin d'une application spécifique</span> aux besoins de ton entreprise?
+                                  <br/><br/>
+                                  Si tu te reconnais, c’est que tu a frappé à la bonne porte !
+                                  <br/><br/>
+                                  Que ce soit pour créer ton <span class="bold">logo</span>, tes <span class="bold">outils de communication papier</span>, tes <span class="bold">supports web</span>, ton <span class="bold">site internet</span>, ou ton <span class="bold">application mobile ou desktop</span>, je mettrais tout en œuvre pour répondre à ta demande avec une proposition parfaitement adaptée à tes besoins et correspondant aux enjeux auxquels tu dois faire face.
+                              </p>
+                          </div>
                         </div>
                         <div id="accroche-cta">
                             <a href="" >EN SAVOIR PLUS</a>
@@ -1543,6 +1551,15 @@
                     transition: 'transform .3s ease-out'
                 });
             });
+    </script>
+    <script>
+      window.onscroll = function () {
+          scrollRotate();
+      };
+      function scrollRotate() {
+          let image = document.getElementById("rouage");
+          image.style.transform = "rotate(" + window.pageYOffset/5 + "deg)"; // the lower number =  the faster rotation
+      }
     </script>
 </body>
 </htmL>

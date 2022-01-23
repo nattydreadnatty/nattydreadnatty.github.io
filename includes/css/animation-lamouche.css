@@ -15,7 +15,14 @@
 /* Animation hidden content */
 @keyframes display {
     to {
-        margin-top:unset;
+        height:unset;
+        overflow:visible;
+    }
+}
+
+@keyframes show {
+    to {
+        overflow:visible;
     }
 }
 
@@ -25,12 +32,14 @@
     animation-delay: 6s;
 }
 
-/* hidden content */
-#hidden-content{
-    margin-top:-1500px;
+
+body {
+    height:100vh;
+    overflow:hidden;
     animation: display 0s ease-out forwards;
     animation-delay: 8s;
 }
+
 
 /* mouche animation */
 .mask {
