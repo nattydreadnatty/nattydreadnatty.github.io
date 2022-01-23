@@ -1,0 +1,18 @@
+.hidden {
+    visibility: hidden;
+}
+
+.rotate {
+    transform: rotate(1turn);
+    transition: transform 2000ms ease-in-out 0.4s;
+}
+
+.move-left {
+    transform: translateX(-2000px);
+    transition: transform 2000ms ease-in-out 0.4s;
+}
+
+.move-right {
+    transform: translateX(2000px);
+    transition: transform 2000ms ease-in-out 0.4s;
+}

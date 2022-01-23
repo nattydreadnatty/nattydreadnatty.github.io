@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./includes/css/style.css">
     <link rel="stylesheet" href="./includes/css/animation-lamouche.css">
     <link rel="stylesheet" href="./includes/css/animation-toggle-menu.css">
+    <link rel="stylesheet" href="./includes/css/animation-index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=PT+Sans&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
@@ -32,7 +33,7 @@
     </header>
     <!--------------------------------------------------------------------- MAIN ------------------------------------------------------------------------------>
     <main>
-        <!--
+        
         <div id="intro-container">
             <svg id="LaMouche" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1132.15 586.08">
                 <defs>
@@ -241,7 +242,7 @@
                 </g>
             </svg>
         </div>
-        -->
+        
         <div id="main-content">
             <div id="toggle-menu">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" >
@@ -1351,7 +1352,7 @@
                             </g>
                           </svg>                                               
                     </div>  
-                    <div id="rouage-illust">
+                    <div id="rouage-illust" >
                       <img id="rouage" src="includes/images/rouage.svg" alt="rouage" />
                     </div>                   
                 </div>
@@ -1385,11 +1386,11 @@
                                   <h3>Pour booster ton business</h3>
                               </div>
                               <p>
-                                  Tu t'apprêtes à donner vie à <span class="bold">ton projet d’entreprise</span>, mais l’univers de la communication t'est inconnu et tu ne sais pas par où commencer ? Tu viens de <span class="bold">démarrer ton activité</span> et tu souhaites <span class="bold">développer ta visibilité</span> pour attirer tes premiers clients ? Tu as <span class="bold">besoin d'une application spécifique</span> aux besoins de ton entreprise?
+                                  Tu t'apprêtes à donner vie à <span class="bold">ton projet</span>, mais l’univers de la communication est un mystère pour toi et tu ne sais pas par où commencer ? Tu viens de <span class="bold">démarrer ton activité</span> et tu souhaites <span class="bold">augmenter ta visibilité</span> pour attirer tes premiers clients ? Tu as <span class="bold">besoin d'une application spécifique</span> aux besoins de ton entreprise?
                                   <br/><br/>
-                                  Si tu te reconnais, c’est que tu a frappé à la bonne porte !
+                                  Tu es au bon endroit !
                                   <br/><br/>
-                                  Que ce soit pour créer ton <span class="bold">logo</span>, tes <span class="bold">outils de communication papier</span>, tes <span class="bold">supports web</span>, ton <span class="bold">site internet</span>, ou ton <span class="bold">application mobile ou desktop</span>, je mettrais tout en œuvre pour répondre à ta demande avec une proposition parfaitement adaptée à tes besoins et correspondant aux enjeux auxquels tu dois faire face.
+                                  <span class="bold">Logo</span>, <span class="bold">outils de communication papier</span>, <span class="bold">supports web</span>, <span class="bold">site internet</span>, <span class="bold">application mobile ou desktop</span>, je suis là pour répondre à tes besoins avec une proposition parfaitement adaptée !
                               </p>
                           </div>
                         </div>
@@ -1403,10 +1404,21 @@
                 </div>
             </div>
             <div id="hidden-content">
-                <div id="mid-content">
-                    
-
+              <div id="lamouche-screen-container">
+                <div id="rouage-illust-screen" >
+                  <img id="rouage-screen" src="includes/images/rouage.svg" alt="rouage" />
+                </div>  
+                <div id="qui-1" >
+                    <img src="includes/images/lamouche-screen-part1.svg" alt="LaMouche Logo" />
                 </div>
+                <div id="qui-2" >
+                    <img src="includes/images/lamouche-screen-part2.svg" alt="LaMouche Logo" />
+                </div>
+              </div>
+              <div id="mid-content">
+                  
+
+              </div>
             </div>
         </div>
     </main>
@@ -1552,6 +1564,7 @@
                 });
             });
     </script>
+    <!--
     <script>
       window.onscroll = function () {
           scrollRotate();
@@ -1561,7 +1574,54 @@
           image.style.transform = "rotate(" + window.pageYOffset/5 + "deg)"; // the lower number =  the faster rotation
       }
     </script>
+    -->
+    <script>
+      var screenContainer = document.querySelector("#lamouche-screen-container");
+      var screenPart1 = document.querySelector("#qui-1");
+      var screenPart2 = document.querySelector("#qui-2");
+      var rouage = document.querySelector("#rouage");
+      var rouageScreen = document.querySelector("#rouage-screen");
+
+      screenContainer.addEventListener("mouseover", addClass, false);
+
+      function addClass() {
+        screenPart1.setAttribute("class", "move-left");
+        screenPart2.setAttribute("class", "move-right");
+        rouage.setAttribute("class", "hidden");
+        rouageScreen.setAttribute("class", "rotate");
+      }
+    </script>
+    <!--
+    <script>
+      var screenContainer = document.querySelector("#lamouche-screen-container");
+      var screenPart1 = document.querySelector("#qui-1");
+      var screenPart2 = document.querySelector("#qui-2");
+
+      screenContainer.addEventListener("mouseover", addClass, false);
+
+      function addClass() {
+        screenPart1.setAttribute("class", "mega my-element");
+        screenPart1.setAttribute("data-paroller-factor", "1");
+        screenPart1.setAttribute("data-paroller-factor-lg", "0.4");
+        screenPart1.setAttribute("data-paroller-factor-md", "0.3");
+        screenPart1.setAttribute("data-paroller-factor-sm", "-0.2");
+        screenPart1.setAttribute("data-paroller-factor-xs", "-0.1");
+        screenPart1.setAttribute("data-paroller-type", "foreground");
+        screenPart1.setAttribute("data-paroller-direction", "horizontal");
+        screenPart1.setAttribute("data-paroller-transition", "transform 0s linear");
+
+        screenPart2.setAttribute("class", "mega my-element");
+        screenPart2.setAttribute("data-paroller-factor", "-1");
+        screenPart2.setAttribute("data-paroller-factor-lg", "0.4");
+        screenPart2.setAttribute("data-paroller-factor-md", "0.3");
+        screenPart2.setAttribute("data-paroller-factor-sm", "-0.2");
+        screenPart2.setAttribute("data-paroller-factor-xs", "-0.1");
+        screenPart2.setAttribute("data-paroller-type", "foreground");
+        screenPart2.setAttribute("data-paroller-direction", "horizontal");
+        screenPart2.setAttribute("data-paroller-transition", "transform 0s linear");
+      }
+    </script>
+    -->
 </body>
 </htmL>
-
 
