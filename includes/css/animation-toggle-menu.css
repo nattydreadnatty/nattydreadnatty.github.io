@@ -44,3 +44,24 @@
         fill:#342e37;
     }
 }
+
+
+@media (min-device-width : 1008px){/* Toggle menu */
+}
+
+@media (min-device-width : 640px) and (max-device-width: 1007px){
+}
+
+@media (max-device-width: 639px){
+    @keyframes slideRight {
+        to {
+            left:45px;
+        }
+    }
+
+    @keyframes slideLeftMenuItem {
+        to {
+            left:-100vw;
+        }
+    }
+}

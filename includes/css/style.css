@@ -48,104 +48,6 @@
     z-index:0;
 }
 
-/* Toggle menu */
-#toggle-menu {
-    width:1.3vw;
-    padding-left:15px;
-    padding-right:15px;
-    margin-top:20px;
-    position:fixed;
-    z-index:10;
-}
-
-#toggle-menu #Ellipse_1:hover {
-    fill:#f6f5ae;
-}
-
-#toggle-menu #Ellipse_2:hover {
-    fill:#e5a4cb;
-}
-
-#toggle-menu #Ellipse_3:hover {
-    fill:#ffb000;
-}
-
-#toggle-menu #Ellipse_4:hover {
-    fill:#3c91e6;
-}
-
-#toggle-menu #Ellipse_5:hover {
-    fill:#342e37;
-}
-
-#menu-items-container {
-    width:46%;
-    margin-left:20px;
-    margin-top:60px;
-}
-
-.menu-item {
-    font-family: "BernardoModaSemibold";
-    padding:5px;
-    text-decoration:none;
-    display:flex;
-    align-items: center;
-    font-size:4vw;
-    position:fixed;
-    left:-40vw;
-    color:#fff;
-    z-index:9;
-}
-
-#accueil {
-    background-color:#f6f5ae;
-    top:25px;
-}
-
-#homepage #accueil {
-    left:60px;
-}
-
-#a-propos {
-    background-color:#e5a4cb;
-    top:40px;
-}
-
-#a-propos-page #a-propos {
-    left:60px;
-    top:25px;
-}
-
-#realisations {
-    background-color:#ffb000;
-    top:60px;
-}
-
-#realisations-page #a-propos {
-    left:60px;
-    top:25px;
-}
-
-#prestations {
-    background-color:#3c91e6;
-    top:80px;
-}
-
-#prestations-page #a-propos {
-    left:60px;
-    top:25px;
-}
-
-#contact {
-    background-color:#342e37;
-    top:100px;
-}
-
-#contact-page #a-propos {
-    left:60px;
-    top:25px;
-}
-
 /* Top Content */
 
 #top-content{
@@ -322,7 +224,7 @@
 }
 
 #accroche-content-title h3{
-    font-size:1.1vw;
+    font-size:18px;
     padding-left:150px;
     padding-top:5px;
     font-family: 'Roboto', sans-serif;
@@ -332,7 +234,7 @@
 #accroche-content p{
     font-family: 'Roboto', sans-serif;
     font-weight:300;
-    font-size:0.75vw;
+    font-size:14px;
     margin-top:20px;
     line-height:2em;
 }
@@ -419,14 +321,184 @@
     margin-top:150px;
 }
 
-
-
 #mid-content{
     border:3px solid orange;
     height:1000px;
 }
 
-
-@media (min-width: 1281px) {
-
+@media (min-device-width : 1008px){
 }
+
+@media (min-device-width : 640px) and (max-device-width: 1007px){
+}
+
+@media (max-device-width: 639px){
+
+    #LaMouche {
+        width: 90%;
+        /*max-width: 500px;*/
+    }
+
+
+    #LaMouche .cls-1 {
+        stroke-width: 10px!important;
+    }
+
+    #LaMouche .cls-2 {
+        stroke-width: 7px!important;
+    }
+
+    #LaMouche .cls-3, #LaMouche .cls-8 {
+        stroke-width: 10px!important;
+    }
+
+    #LaMouche .cls-4 {
+        fill: #342e37;
+    }
+
+    #LaMouche .cls-11, #LaMouche .cls-5, #LaMouche .cls-4 {
+        stroke-width: 12px!important;
+    }
+
+    #LaMouche .cls-6 {
+        stroke-width: 13px!important;
+    }
+
+    #LaMouche .cls-7 {
+        stroke-width: 11px!important;
+    }
+
+    #LaMouche .cls-8 {
+        stroke-width: 14px;
+    }
+
+    #LaMouche .cls-10, #LaMouche .cls-11, #LaMouche .cls-12, #LaMouche .cls-13, #LaMouche .cls-8, #LaMouche .cls-9 {
+        stroke-linecap: round;
+    }
+
+    #LaMouche .cls-9 {
+        stroke-width: 11px!important;
+    }
+
+    #LaMouche .cls-10 {
+        stroke-width: 12px!important;
+    }
+
+    #LaMouche .cls-12, #LaMouche .cls-16 {
+        stroke-width: 12px!important;
+    }
+
+    #LaMouche .cls-13, #LaMouche .cls-14 {
+        stroke-width: 15px!important;
+    }
+
+    #top-content{
+        height: unset;
+        flex-direction: column-reverse;
+    }
+
+    #accroche {
+        width:unset;
+        
+    }
+
+    #accroche-title {
+        font-size: 20px;
+        width: 80vw;
+        margin-bottom:4px;
+    }
+
+    #accroche-title span {
+        font-size:20px;
+        float:unset;
+    }
+
+    #accroche-content-container {
+        width:90%;
+    }
+
+    #freelance {
+        margin-bottom:60px;
+    }
+
+    #freelance h3 {
+        font-size:15px;
+    }
+
+    #pssst {
+        width:80%;
+        margin-top:20px;
+    }
+
+    #pssst-background img{
+
+    }
+
+    #pssst-title {
+        font-size:25px;
+        padding-left:unset;
+    }
+
+
+    #accroche-flex-container {
+        margin-right:20px;
+        width:100%;
+    }
+
+    #accroche-content {
+
+    }
+
+    #accroche-content-title h2 {
+        font-size: 25px;
+    }
+
+    #accroche-content-title h3 {
+        padding-left:unset;
+    }
+
+    #accroche-cta {
+        margin-right:20px;
+    }
+
+    #accroche-cta a {
+        font-size: 15px;
+    }
+
+    #words {
+        width:90vw;
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:unset;
+    }
+
+    #lamouche-screen-container{
+        align-items: center;
+    }
+
+    #rouage-illust-screen {
+        width: 130px;
+    }
+
+    #rouage-illust-screen img {
+        width: 130px;
+        margin-left:-80px;
+    }
+
+    #qui-1 img {
+        height:80vh;
+        margin-left:-50vh;
+        margin-top: -100px;
+    }
+
+    #qui-2 img {
+        height:80vh;
+        margin-left:-50vh;
+        margin-top: -100px;
+    }
+}
+/* OTHER POSSIBILITY
+    Small (smaller than 640px)
+    Medium (641px to 1007px)
+    Large (1008px and larger)
+*/
