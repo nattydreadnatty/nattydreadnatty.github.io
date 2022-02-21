@@ -1,0 +1,32 @@
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); fill:#f6f5ae;}
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-25px); fill:#f6f5ae;}
+    50%  { transform: scale(1.05,.95) translateY(0); fill:#342e37;}
+    57%  { transform: scale(1,1)      translateY(-7px); fill:#f6f5ae;}
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); fill:#f6f5ae;}
+}
+
+#social svg {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+#logo-instagram {
+    animation-delay:10s;
+}
+
+#logo-facebook {
+    animation-delay:10.25s;
+}
+
+#logo-twitter {
+    animation-delay:10.50s;
+}
+
+#logo-linkedin {
+    animation-delay:10.75s;
+}

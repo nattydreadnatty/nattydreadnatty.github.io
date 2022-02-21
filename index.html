@@ -1,3 +1,8 @@
+<!--TODO: COMMENTER LE CODE -->
+<!--TODO: ADD PAGE PRESTATIONS -->
+<!--TODO: ADD PAGE A PROPOS -->
+<!--TODO: ADD PAGE CONTACT ME -->
+<!--TODO: REALISATIONS -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
@@ -22,9 +27,10 @@
     <link rel="stylesheet" href="./includes/css/toggle-menu.css">
     <link rel="stylesheet" href="./includes/css/animation-toggle-menu.css">
     <link rel="stylesheet" href="./includes/css/animation-index.css">
+    <link rel="stylesheet" href="./includes//css/animation-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=PT+Sans&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Anton&family=Amatic+SC:wght@400;700&family=PT+Sans&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 </head>
 <body id="homepage">
     <header>
@@ -1354,7 +1360,7 @@
                           </svg>                                               
                     </div>  
                     <div id="rouage-illust" >
-                      <img id="rouage" src="includes/images/rouage.svg" alt="rouage" />
+                      
                     </div>                   
                 </div>
                 <div id="accroche">
@@ -1405,26 +1411,163 @@
                 </div>
             </div>
             <div id="hidden-content">
-              <div id="lamouche-screen-container">
-                <div id="rouage-illust-screen" >
-                  <img id="rouage-screen" src="includes/images/rouage.svg" alt="rouage" />
-                </div>  
-                <div id="qui-1" >
-                    <img src="includes/images/lamouche-screen-part1.svg" alt="LaMouche Logo" />
+              <div id="animation-container">
+                <div id="about-me-container">
+                  <div id="picture">
+                    <img src="./includes/images/visu-fred.svg" alt="Photo de moi - Fred" />
+                  </div>
+                  <div id="background">
+                    <img src="./includes/images/back-visu-fred.svg" alt="Background jaune" />
+                  </div>
                 </div>
-                <div id="qui-2" >
-                    <img src="includes/images/lamouche-screen-part2.svg" alt="LaMouche Logo" />
+                <div id="about-me-text-container">
+                  <div id="about-me-wrapper">
+                    
+                  </div>
+                  <div id="about-me-text">
+                    <p>
+                      Salut et bienvenue ! Passionnée par l’univers du web, je dédie une grande partie de mon temps à développer de nouvelles compétences et m’informer des nouvelles tendances.
+                      <br/><br/>
+                      Entre WebDesign et Développement d'applications mon coeur balance. 
+                      <br/><br/>
+                      Et comme, pour moi, l'un ne va pas sans l'autre, j'ai décidé de faire les deux!
+                      <br/><br/>
+                      Le reste du temps ? Et bien je le passe en famille... Au programme bricolage,  et bien sûr comme toute bonne geek qui se respecte... Une petite dose de gaming...
+                    </p>
+                  </div>
                 </div>
-              </div>
+                <div id="lamouche-screen-container">
+                  <div id="rouage-illust-screen" >
+                    <img id="rouage-screen" src="includes/images/rouage.svg" alt="rouage" />
+                  </div>  
+                  <div id="qui-1" >
+                      <img src="includes/images/lamouche-screen-part1.svg" alt="LaMouche Logo" />
+                  </div>
+                  <div id="qui-2" >
+                      <img src="includes/images/lamouche-screen-part2.svg" alt="LaMouche Logo" />
+                  </div>
+                </div>
+            </div>
+            <div id="about-cta" class="flex-gap">
+              <a href="" >A PROPOS</a>
+            </div>
               <div id="mid-content">
-                  
-
+                <div id="web-container">
+                  <div id="visu-web">
+                    <img src="./includes/images/visu-web.png" alt="visuel webdesign" />
+                  </div>
+                  <div id="text-web">
+                    <H2 class="flex-gap">Création de Sites Web</H2>
+                    <p class="flex-gap">
+                      De la conception à la mise en ligne, en passant par la création des visuels, je prends en charge toutes les étapes de création de votre site internet.
+                      <Br/><Br/>
+                      Mes atouts pour mener à bien cette responsabilité: mes qualités d'écoute et d'analyse, ma détermination et ma créativité.
+                    </p>
+                    <div id="webdesign-cta" class="flex-gap">
+                      <a href="" >DECOUVRIR</a>
+                    </div>
+                  </div>
+                </div>
+                <div id="dev-container">
+                  <div id="visu-dev">
+                    <img src="./includes/images/dev-visu.png" alt="visuel développement applications" />
+                  </div>
+                  <div id="text-dev">
+                    <H2 class="flex-gap">Développement d'Applications Desktop et Mobile</H2>
+                    <p class="flex-gap">
+                      Javascript, PHP, Node.JS, Nest, Angular, Python, Java, SQl,...
+                      <Br/><Br/>
+                      Je dispose de toutes les compétences nécessaires pour développer l'application dont vous avez besoin.
+                    </p>
+                    <div id="dev-cta" class="flex-gap">
+                      <a href="" >DEMOS EN LIGNE</a>
+                    </div>
+                  </div>
+                </div>
+                <div id="print-container">
+                  <div id="visu-print">
+                    <img src="./includes/images/visu-print.png" alt="visuel print" />
+                  </div>
+                  <div id="text-print">
+                    <H2 class="flex-gap">Création Visuels Print et Web</H2>
+                    <p class="flex-gap">
+                      Bien communiquer est un art... 
+                      <Br/><Br/>
+                      Flyers, cartes de visites, brochures, documents techniques, chartes graphiques, dossiers de conception, Branding, Logos...
+                      Je mets mon savoir faire à votre service pour réaliser les visuels qui vous correspondent.
+                    </p>
+                    <div id="print-cta" class="flex-gap">
+                      <a href="" >PORTFOLIO</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
     </main>
     <!-------------------------------------------------------------------- FOOTER ----------------------------------------------------------------------------->
     <footer >
+      <div id="social">
+        <div id="instagram">
+          <svg id="logo-instagram" data-name="logo-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.09 200">
+            <path d="M221.42,50.18C220.07,37,215,25.36,205.24,16,195,6.2,182.35,1.86,168.55,1.13,145-.15,89.2-1,69.59,2.24,47.19,5.89,32.5,19,26.3,41.09c-4.76,17-3.82,95.49-1,112.32,3.79,23,17.39,37.76,40.19,43.64,15.78,4.07,93.35,3.55,110.76.73,23-3.72,37.84-17.25,43.82-40C224.62,140.29,223,65.94,221.42,50.18ZM203,150.15c-2.68,17.48-14.27,28.31-31.85,30.23C155,182.15,82.94,183.12,68,178.93c-14.32-4-22.51-13.84-24.89-28.26-2.27-13.77-2.83-82.56,0-101,2.64-17.33,14.24-28.14,31.71-30.09,17.72-2,81.51-2.21,98.49.4,17.44,2.67,28.25,14.3,30.16,31.9C205.2,68.32,205.71,132.51,203,150.15ZM123,48.71A51.31,51.31,0,1,0,174.29,100,51.3,51.3,0,0,0,123,48.71Zm-.36,84.45a33.18,33.18,0,1,1,33.48-32.88A33.17,33.17,0,0,1,122.66,133.16Zm65.67-86.39a12,12,0,1,1-12-12A12,12,0,0,1,188.33,46.77Z" transform="translate(-22.95 0)"/>
+          </svg>
+        </div>
+        <div id="facebook">
+          <svg id="logo-facebook" data-name="logo-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.42 200">
+            <defs>
+              <style>
+                .cls-fb {
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path class="cls-fb" d="M154.06,33.75c6.19-.21,12.38,0,18.59-.06h2.56V1.47c-3.31-.34-6.77-.81-10.24-1-6.35-.28-12.71-.6-19.08-.45C136.18.24,127,2.61,119,8.36c-9.2,6.63-14.26,15.92-16.18,26.91a92.57,92.57,0,0,0-1.12,13.83c-.18,7.23,0,14.46,0,21.7v2.71H70.79v36h30.66V200h37.47V109.65h30.56c1.56-12,3.09-23.82,4.7-36.16h-6.87c-8.69,0-28.64,0-28.64,0s.09-17.85.3-25.59C139.27,37.29,145.56,34.06,154.06,33.75Z" transform="translate(-70.79 0)"/>
+          </svg>
+        </div>
+        <div id="twitter">
+          <svg id="logo-twitter" data-name="logo-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.77 200">
+            <defs>
+              <style>
+                .cls-tw {
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path class="cls-tw" d="M74.76,156.51c-26.25-.92-42.65-19.75-47-35a50.14,50.14,0,0,0,21.64-.66,5.25,5.25,0,0,0,.73-.33C35.93,117.17,25,109.57,17.34,97.31a49.12,49.12,0,0,1-7.4-26.85,49.85,49.85,0,0,0,22.48,6.12C21.73,68.88,14.57,58.82,11.63,46A50,50,0,0,1,17.05,9.37C44.39,41.57,79,59.23,121.2,62.14c-.29-2-.6-3.76-.81-5.53a49,49,0,0,1,7.39-33C135.8,11,147.28,3.16,162,.77,179-2,193.83,2.82,206.23,14.84a2.54,2.54,0,0,0,2.68.8A101.59,101.59,0,0,0,238.29,4.35,7.17,7.17,0,0,1,239,4s.13,0,.34,0a51.77,51.77,0,0,1-21.63,27.48,96.85,96.85,0,0,0,28.12-7.57l.21.23c-1.94,2.53-3.8,5.11-5.81,7.57a98.52,98.52,0,0,1-18.36,17.44,1.73,1.73,0,0,0-.83,1.59,139,139,0,0,1-.94,22.43,148.47,148.47,0,0,1-13,45,145.79,145.79,0,0,1-27.3,39.81,135,135,0,0,1-69.4,38.67,151,151,0,0,1-28.13,3.34A142.61,142.61,0,0,1,1.41,178.25c-.31-.19-.63-.41-1.18-.78a102.1,102.1,0,0,0,50.51-7A100.15,100.15,0,0,0,74.76,156.51Z" transform="translate(-0.23 0)"/>
+          </svg>
+        </div>
+        <div id="linkedin">
+          <svg id="logo-linkedin" data-name="logo-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.47 200">
+            <g>
+              <path d="M26.07,66.39h41.6V200H26.07ZM46.88,0A24.08,24.08,0,1,1,22.77,24.06,24.08,24.08,0,0,1,46.88,0" transform="translate(-22.77)"/>
+              <path d="M93.73,66.39h39.83V84.67h.55c5.55-10.52,19.1-21.58,39.32-21.58,42,0,49.8,27.65,49.8,63.63V200h-41.5V135c0-15.5-.3-35.43-21.58-35.43-21.62,0-24.92,16.88-24.92,34.3V200H93.73Z" transform="translate(-22.77)"/>
+            </g>
+          </svg>          
+        </div>
+      </div>
+      <div id="words-flow">
+        <div id="web" class="words-flow-item">WEB</div>
+        <div class="words-flow-item">+</div>
+        <div id="design" class="words-flow-item">DESIGN</div>
+        <div class="words-flow-item">+</div>
+        <div id="developpement" class="words-flow-item">DEVELOPPEMENT</div>
+        <div class="words-flow-item">+</div>
+        <div id="applications" class="words-flow-item">APPLICATIONS</div>
+        <div class="words-flow-item">+</div>
+        <div id="fullstack" class="words-flow-item">FULLSTACK</div>
+        <div class="words-flow-item">+</div>
+        <div id="creativite" class="words-flow-item">CREATIVITE</div>
+      </div>
+      <div id="footer-content">
+        <div id="footer-left-content">
+          <div id="newsletter">
+              <h3>NEWSLETTER</h3>
+              <p>Recevez les news, offres, et autres joyeuseries de LaMouche dans votre boîte mail en vous abonnant à la newsletter !              </p>
+          </div>
+        </div>
+        <div id="footer-right-content"></div>
+      </div>
     </footer>
     <!-------------------------------------------------------------- MENU BURGER SCRIPT ----------------------------------------------------------------------->
     <script>
@@ -1582,14 +1725,16 @@
       var screenPart2 = document.querySelector("#qui-2");
       var rouage = document.querySelector("#rouage");
       var rouageScreen = document.querySelector("#rouage-screen");
+      var acoutCta = document.querySelector("#about-cta");
 
       screenContainer.addEventListener("mouseover", addClass, false);
 
       function addClass() {
         screenPart1.setAttribute("class", "move-left");
         screenPart2.setAttribute("class", "move-right");
-        rouage.setAttribute("class", "hidden");
         rouageScreen.setAttribute("class", "rotate");
+        acoutCta.setAttribute("class", "flex-gap show");
+        
       }
     </script>
     <!--
