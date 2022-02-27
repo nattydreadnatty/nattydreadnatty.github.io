@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .prl{
+    height: 10em;
+    border: 1px solid red;
+    background: white;
+    box-sizing: border-box;
+  }
+  .row{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .header{
+    height: 50em;
+    background-image: url(//picsum.photos/1000/1000/?random);
+    background-size: cover;
+  }

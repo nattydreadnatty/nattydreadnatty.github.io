@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #342e37;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="11" cy="11" r="11"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-1" cx="11" cy="40" r="11"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-1" cx="11" cy="69" r="11"/>
+  </g>
+</svg>

@@ -1,0 +1,1117 @@
+@font-face {
+    font-family: 'BernardoModaSemibold';
+    src: url('../fonts/BernardoModaSemibold.eot');
+    src: url('../fonts/BernardoModaSemibold.eot') format('embedded-opentype'),
+         url('../fonts/BernardoModaSemibold.woff2') format('woff2'),
+         url('../fonts/BernardoModaSemibold.woff') format('woff'),
+         url('../fonts/BernardoModaSemibold.ttf') format('truetype'),
+         url('../fonts/BernardoModaSemibold.svg#BernardoModaSemibold') format('svg');
+}
+
+@font-face {
+    font-family: 'GOTHIC';
+    src: url('../fonts/GOTHIC.eot');
+    src: url('../fonts/GOTHIC.eot') format('embedded-opentype'),
+         url('../fonts/GOTHIC.woff2') format('woff2'),
+         url('../fonts/GOTHIC.woff') format('woff'),
+         url('../fonts/GOTHIC.ttf') format('truetype'),
+         url('../fonts/GOTHIC.svg#GOTHIC') format('svg');
+}
+
+body {
+    color: #342e37;
+}
+
+/* GENERAL STYLES */
+.bold{
+    font-weight:500;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* svg container */
+#intro-container {
+    position:absolute;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+    background-color: #fff;
+    z-index:100;
+}
+
+/* svg */
+#LaMouche {
+    max-width: 500px;
+}
+
+/* Main content */
+#main-content {
+    z-index:0;
+}
+
+/* Top Content */
+
+#top-content{
+
+    z-index:1;
+    margin-top:-60px;
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+#words{
+    padding-left:30px;
+    z-index:0;
+    box-sizing: border-box;
+    width:45%;
+    box-sizing: border-box;
+    align-self: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+}
+
+#words-illus-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+#words svg {
+    min-width: 600px;
+    width:100%;
+}
+
+#rouage-illust {
+    width:250px;
+}
+
+#rouage-illust img {
+    margin-left:-150px;
+}
+
+#accroche{
+    max-width:850px;
+    min-width:400px;
+    text-align:right;
+    padding-right:20px;
+    color:#342e37;
+    box-sizing: border-box;
+    width:45%;
+}
+
+#accroche-title{
+    font-family: "GOTHIC";
+    font-weight: 100;
+    font-size: 1.75vw;
+    display: block;
+    margin-top: 20px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* overflow:hidden;  annule effet du float qd appliqué au conteneur du div dont propriete est float*/
+}
+
+#accroche-title .first-letter{
+    font-size: 60px;
+    transform: translateY(-5px);
+    font-weight:100;
+}
+
+#accroche-title span{
+    float: right;
+}
+
+#accroche-content-container-back{
+    height: 775px;
+    float: right;
+    width: 100%;
+    margin-top: -20px;
+    z-index: 0;
+}
+
+ #accroche-borders{
+     width:75.5%;
+     height:85%;
+     float:right;
+     border-top:4px solid #342e37;
+     border-right:4px solid #342e37;
+     z-index: 0;
+     box-sizing: border-box;
+ }
+
+ #accroche-content-container{
+    height: 775px;
+    float:right;
+    width:80%;
+
+    z-index: 5;
+    margin-top:-776px;
+}
+
+#freelance{
+    float:right;
+    background-color:#342e37;
+    margin-top:2px;
+}
+
+#freelance h3{
+    font-family: "GOTHIC";
+    font-size:30px;
+
+    color:#F6F5AE   ;
+    padding:2px 18px 2px 18px;
+}
+
+#pssst{
+    text-align:left;
+    width:71%;
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    align-items: center;
+    margin-top:20px;
+}
+
+#pssst-background{
+    grid-row: 1;
+    grid-column: 1;
+    z-index:1;
+}
+
+#pssst-title{
+    font-family: 'Amatic SC', cursive;
+    font-size:30px;
+    color:#342e37;
+    grid-row: 1;
+    grid-column: 1;
+    z-index:5;
+    padding:0 30px 0 30px;
+}
+
+#accroche-flex-container {
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    float:right;
+    width: 70%;
+    margin-right:80px;
+    margin-top:80px;
+    justify-content:right;
+}
+
+#accroche-content{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    align-items: center;
+    float:right;
+    justify-content:right;
+    grid-row: 1;
+    grid-column: 1;
+    z-index:5;
+}
+
+#accroche-content-background{
+    grid-row: 1;
+    grid-column: 1;
+    z-index:1;
+}
+
+#accroche-content-question {
+    grid-row: 1;
+    grid-column: 1;
+    z-index:2;
+    margin-top:-90px;
+}
+
+#accroche-content-question img {
+    width:130px;
+}
+
+#accroche-content-background img{
+    width:70%;
+}
+
+#accroche-content-title{
+    grid-row: 1;
+    grid-column: 1;
+    z-index:5;
+    font-family: "GOTHIC";
+    margin-top:-10px;
+}
+
+#accroche-content-title h2{
+    font-size:35px;
+    font-weight:600;
+}
+
+#accroche-content-title h3{
+    font-size:18px;
+    padding-left:150px;
+    padding-top:5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+}
+
+#accroche-content p{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    margin-top:20px;
+    line-height:2em;
+}
+
+#accroche-cta{
+    background-color:#342e37;
+    float:right;
+    margin-right:80px;
+    margin-top:30px;
+    border:0;
+    transition: all 0.5s ;
+}
+
+#accroche-cta:hover {
+    border-right: 20px solid #3c91e6;
+}
+
+#accroche-cta a{
+    text-decoration:none;
+    font-family: "GOTHIC";
+    font-size:23px;
+    color:#F6F5AE;
+    padding:3px 30px 5px 30px;
+    display:block;
+    transition: all 0.5s ;
+}
+
+#accroche-cta a:hover{
+    color: #fff;
+}
+
+#lm-logo{
+    clear:both;
+    float:right;
+    width:40%;
+    margin-top:30px;
+    z-index:10;
+}
+
+#rouage-illust-screen {
+    width:10vw;
+    transform:translateX(30px);
+}
+
+#rouage-illust-screen img {
+    margin-left:-150px;
+}
+
+#rouage-illust-screen {
+    z-index:5!important;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: start;
+}
+
+#rouage-screen {
+    z-index:5!important;
+}
+
+#hidden-content {
+    overflow-x: hidden;
+    overflow-y:visible;
+    display: grid;
+}
+
+#animation-container {
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    align-content: center;
+}
+
+#about-me-container {
+    grid-row: 1;
+    grid-column: 1;
+    z-index:3!important;
+    display: flex;
+    flex-wrap: wrap;
+    /*border:1px solid gray;*/
+    width:80%;
+    justify-self: center;
+    max-width:1000px;
+
+}
+
+#picture {
+    display:flex;
+    justify-content: right;
+    flex-grow: 1;
+    /*border:1px solid rebeccapurple;*/
+}
+
+#picture img {
+    min-width:400px;
+    max-width:500px;
+    display: block;
+    z-index:2;
+    transform: translateY(5vw);
+}
+
+#background {
+    display:flex;
+    justify-content: left;
+    z-index:1;
+    flex-grow: 1;
+    
+}
+
+#background img {
+    display: block;
+    transform: translateX(-4vw) translateY(8vw) scale(1.4);
+    min-width:500px;
+    max-width:600px;
+}
+
+#about-me-text-container {
+    grid-row: 1;
+    grid-column: 1;
+    z-index:4!important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    width:80%;
+    justify-self: center;
+    justify-content: flex-end;
+    max-width:1000px;
+}
+
+#about-me-wrapper {
+    width:20%;
+}
+
+#about-me-text {
+    z-index:3;
+    display:flex;
+    flex-wrap: wrap;
+    width:46%;
+    align-self: center;
+    padding-right:60px;
+}
+
+#about-me-text p {
+    display:block;
+    transform: translateX(1vw) translateY(7.5vw);
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    line-height: 1.5em;
+    color: #342e37;
+}
+
+#about-cta-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    width:80%;
+    justify-self: center;
+    justify-content: flex-end;
+    max-width:1000px;
+    margin-top:-60px;
+}
+
+#button {
+    /* z-index:3; */
+    display:flex;
+    flex-wrap: wrap;
+    width:46%;
+    align-self:flex-end;
+    padding-right:60px;
+}
+
+
+#about-cta{
+    background-color:#342e37;
+    border:0;
+    transition: all 0.5s ;
+    width:180px;
+}
+
+#about-cta:hover {
+    border-left: 20px solid #e5a4cb;
+}
+
+#about-cta a{
+    text-decoration:none;
+    font-family: "GOTHIC";
+    font-size:23px;
+    color:#F6F5AE;
+    padding:3px 30px 5px 30px;
+    display:block;
+    transition: all 0.5s ;
+}
+
+#about-cta a:hover{
+    color: #fff;
+}
+
+#lamouche-screen-container {
+    width:100vw;
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    align-items: start;
+    z-index:6!important;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#qui-1 {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top:150px;
+    
+}
+
+#qui-1 img {
+    width:100%;
+}
+
+
+#qui-2 {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top:150px;
+}
+
+#qui-2 img {
+    width:100%;
+}
+
+#mid-content{
+    margin-top:200px;
+    z-index:5;
+}
+
+#web-container, #print-container{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color: #E2D3EA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#visu-web,#visu-print {
+    width:50%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#visu-web img, #visu-print img {
+    width:50%;
+}
+
+#text-web, #text-print {
+    width:50%;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size:15px;
+    line-height: 1.5em;
+    align-self: flex-end;
+    margin-bottom: 2vw;;
+}
+
+.flex-gap {
+    margin:20px;
+}
+
+#text-web h2, #text-print h2 {
+    font-family: "GOTHIC";
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+#text-web p, #text-print p {
+    width:50%;
+}
+
+#webdesign-cta, #print-cta {
+    background-color:#342e37;
+    float:right;
+    margin-right:80px;
+    margin-top:30px;
+    border:0;
+    transition: all 0.5s ;
+    width:185px;
+}
+
+#print-cta {
+    width:175px;
+}
+
+#webdesign-cta:hover, #print-cta:hover {
+    border-left: 20px solid #ffb000;
+}
+
+#webdesign-cta a, #print-cta a{
+    text-decoration:none;
+    font-family: "GOTHIC";
+    font-size:21px;
+    color:#F6F5AE;
+    padding:3px 30px 5px 30px;
+    display:block;
+    transition: all 0.5s ;
+}
+
+#webdesign-cta a:hover, #print-cta a:hover{
+    color: #fff;
+}
+
+#dev-container {
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#visu-dev {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    width:50%
+}
+
+#visu-dev img {
+    width:50%;
+}
+
+.flex-gap {
+    margin:20px;
+}
+
+#text-dev {
+    width:50%;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    line-height: 1.5em;
+    align-self: flex-end;
+    margin-bottom: 2vw;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#text-dev p {
+    width: 50%;
+}
+
+#text-dev h2 {
+    font-family: "GOTHIC";
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 1.2em;
+    width:50%;
+}
+
+#dev-cta{
+    background-color:#342e37;
+    margin-top:30px;
+    border:0;
+    transition: all 0.5s ;
+    width:235px;
+    float: right;
+}
+
+#dev-cta:hover {
+    border-right: 20px solid #ffb000;
+}
+
+#dev-cta a{
+    text-decoration:none;
+    font-family: "GOTHIC";
+    font-size:21px;
+    color:#F6F5AE;
+    padding:3px 30px 5px 30px;
+    display:block;
+    transition: all 0.5s ;
+}
+
+#dev-cta a:hover{
+    color: #fff;
+}
+
+
+
+/* FIXME : responsive issu with rouage */
+@media (min-width : 1008px) and (max-width : 1700px){
+    #about-me-container {
+        width: 100%;
+
+    }
+}
+
+@media (min-width : 900px) and (max-width: 1007px){
+    #about-me-container {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 1110px) {
+    #top-content {
+        margin-bottom:200px;
+    }
+
+    #accroche {
+        width:100%;
+    }
+
+    #accroche-title {
+        font-size:3.6vw;
+    }
+
+    #accroche-content-container {
+        width:90%;
+    }
+
+    #accroche-borders {
+        width:70%;
+    }
+
+    #words {
+        width:100%;
+        margin-top:200px;
+    }
+
+    #words-illus {
+        align-self: center;
+    }
+    
+    #about-me-container {
+        width: 100%;
+    }
+
+    #picture {
+        justify-content: center;
+    }
+    
+
+    #background {
+        width:100%;
+        justify-content:center;
+    }
+
+    #background img {
+        transform: translateX(0) translateY(8vw) scale(1.4);
+    }
+    #about-me-text-container {
+        align-items: flex-end;
+    }
+
+    #about-me-wrapper {
+        width: 0;
+
+    }
+
+    #about-me-text {
+        width:unset!important;
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-me-text p {
+        transform: translateY(30px);
+        max-width:600px;
+    }
+
+    #button {
+        width:100%;
+        transform: translateY(150px);
+        max-width:600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-cta {
+        margin-left: 0px;
+    }
+
+    #lamouche-screen-container {
+        display:none;
+    }
+
+    #visu-web, #visu-dev, #visu-print, #text-web, #text-dev, #text-print, #text-web p, #text-dev p, #text-print p {
+        width:100%;
+        padding-left:30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    #web-container img, #dev-container img, #print-container img {
+        width:100%;
+    }
+
+    #text-web h2, #text-dev h2, #text-print h2 {
+        font-size:40px;
+        width: 100%;
+        margin-bottom:30px;
+        margin-top:10px;
+        text-align: left;
+    }
+
+    #text-print h2 {
+        margin-top:30px;
+    }
+
+    #text-web p, #text-dev p, #text-print p {
+        font-size:14px;
+        line-height:1.5em;
+        padding: 0;
+        text-align: justify;
+    }
+
+    #webdesign-cta, #dev-cta, #print-cta {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+    #webdesign-cta a, #dev-cta a, #print-cta a {
+        font-size: 23px;
+        line-height: 1em;
+    }
+
+    .flex-gap {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 640px){
+
+
+    #LaMouche .cls-1 {
+        stroke-width: 10px!important;
+    }
+
+    #LaMouche .cls-2 {
+        stroke-width: 7px!important;
+    }
+
+    #LaMouche .cls-3, #LaMouche .cls-8 {
+        stroke-width: 10px!important;
+    }
+
+    #LaMouche .cls-4 {
+        fill: #342e37;
+    }
+
+    #LaMouche .cls-11, #LaMouche .cls-5, #LaMouche .cls-4 {
+        stroke-width: 12px!important;
+    }
+
+    #LaMouche .cls-6 {
+        stroke-width: 13px!important;
+    }
+
+    #LaMouche .cls-7 {
+        stroke-width: 11px!important;
+    }
+
+    #LaMouche .cls-8 {
+        stroke-width: 14px;
+    }
+
+    #LaMouche .cls-10, #LaMouche .cls-11, #LaMouche .cls-12, #LaMouche .cls-13, #LaMouche .cls-8, #LaMouche .cls-9 {
+        stroke-linecap: round;
+    }
+
+    #LaMouche .cls-9 {
+        stroke-width: 11px!important;
+    }
+
+    #LaMouche .cls-10 {
+        stroke-width: 12px!important;
+    }
+
+    #LaMouche .cls-12, #LaMouche .cls-16 {
+        stroke-width: 12px!important;
+    }
+
+    #LaMouche .cls-13, #LaMouche .cls-14 {
+        stroke-width: 15px!important;
+    }
+
+    #top-content{
+        height: unset;
+
+    }
+
+ 
+    #accroche-title {
+        font-size: 20px;
+        width: 80vw;
+        margin-bottom:4px;
+    }
+    
+
+    #accroche-title .accroche-span {
+        font-size:19px!important;
+    }
+
+    #accroche-content-container-back {
+        margin-top:-20px;
+    }
+
+    #accroche-content-container {
+        width:90%;
+    }
+
+    #accroche-borders {
+        max-width:365px;
+        /* width:77.5%; */
+    }
+
+    #freelance {
+        margin-bottom:60px;
+    }
+
+    #freelance h3 {
+        font-size:25px;
+    }
+
+    #pssst {
+        width:90%;
+        margin-top:20px;
+    }
+
+    #pssst h4 {
+        font-size:30px;
+    }
+
+    #pssst-background img{
+
+    }
+
+    #pssst-title {
+        font-size:25px;
+        padding-left:unset;
+    }
+
+
+    #accroche-flex-container {
+        margin-right:20px;
+        width:100%;
+    }
+
+    #accroche-content {
+
+    }
+
+    #accroche-content-title h2 {
+        font-size: 25px;
+    }
+
+    #accroche-content-title h3 {
+        padding-left:unset;
+    }
+
+    #accroche-cta {
+        margin-right:20px;
+    }
+
+    #accroche-cta a {
+        font-size: 20px;
+    }
+
+    #words {
+        width:90vw;
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:unset;
+    }
+
+
+
+    #top-content {
+        margin-bottom:100px;
+    }
+
+    #accroche {
+        width:100%;
+    }
+
+
+    #words {
+        width:100%;
+        margin-top:200px;
+        display: inline;
+        min-width: unset;
+    }
+    #words-illus-container {
+        width: 100%;
+    }
+
+    #words-illus {
+        align-self: center;
+    }
+
+    #words svg {
+        min-width:unset;
+        width:100%;
+    }
+    
+    #about-me-container {
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    #picture {
+        justify-content: center;
+    }
+
+    #picture img {
+        transform: translateY(0) scale(0.9);
+        align-self: center;
+    }
+    
+
+    #background {
+        width:100%;
+        justify-content:center;
+        padding-bottom:100px;
+    }
+
+    #background img {
+        width:200px;
+        transform: translateY(-5vw) scale(1.8);
+        
+    }
+
+    #about-me-text-container {
+        align-items: flex-end;
+        width:100%;
+    }
+
+    #about-me-wrapper {
+        width: 0;
+
+    }
+
+    #about-me-text {
+        text-align: justify;
+        align-self: flex-end;
+        width:80%;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding:0px;
+        transform: translateY(-60px);
+    }
+
+    #about-me-text p {
+        transform: translateY(0);
+        width:100%;
+    }
+
+    #button {
+        width:100%;
+        transform: translateY(50px);
+        padding:0;
+    }
+
+    #about-cta {
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+    }
+
+    #LaMouche {
+        width: 90%;
+        /*max-width: 500px;*/
+    }
+
+    #lamouche-screen-container {
+        display:none;
+    }
+
+    #visu-web, #visu-dev, #visu-print, #text-web, #text-dev, #text-print, #text-web p, #text-dev p, #text-print p {
+        width:100%;
+        padding-left:30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    #web-container img, #dev-container img, #print-container img {
+        width:100%;
+    }
+
+    #text-web h2, #text-dev h2, #text-print h2 {
+        font-size:40px;
+        width: 100%;
+        margin-bottom:30px;
+        margin-top:10px;
+        text-align: left;
+    }
+
+    #text-print h2 {
+        margin-top:30px;
+    }
+
+    #text-web p, #text-dev p, #text-print p {
+        font-size:14px;
+        line-height:1.5em;
+        padding: 0;
+        text-align: justify;
+    }
+
+    #webdesign-cta, #dev-cta, #print-cta {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+    #webdesign-cta a, #dev-cta a, #print-cta a {
+        font-size: 23px;
+        line-height: 1em;
+    }
+
+    .flex-gap {
+        margin: 0;
+    }
+
+}
+/* OTHER POSSIBILITY
+    Small (smaller than 640px)
+    Medium (641px to 1007px)
+    Large (1008px and larger)
+*/

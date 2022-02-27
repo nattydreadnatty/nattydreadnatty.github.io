@@ -1,0 +1,126 @@
+
+    #toggle-menu {
+        width:1.3vw;
+        padding-left:15px;
+        padding-right:15px;
+        margin-top:20px;
+        position:fixed;
+        z-index:10;
+    }
+
+    #toggle-menu #Ellipse_1:hover {
+        fill:#BD92CA; /* f6f5ae */
+    }
+
+    #toggle-menu #Ellipse_2:hover {
+        fill:#342e37;
+    }
+
+    #toggle-menu #Ellipse_3:hover {
+        fill:#ffb000;
+    }
+
+    #toggle-menu #Ellipse_4:hover {
+        fill:#3c91e6;
+    }
+
+    #toggle-menu #Ellipse_5:hover {
+        fill:#e5a4cb;
+    }
+
+    #menu-items-container {
+        width:46%;
+        margin-left:20px;
+        margin-top:60px;
+    }
+
+    .menu-item {
+        font-family: "BernardoModaSemibold";
+        padding:5px;
+        text-decoration:none;
+        display:flex;
+        align-items: center;
+        font-size:4vw;
+        position:fixed;
+        left:-40vw;
+        color:#fff;
+        z-index:9;
+    }
+
+    #accueil {
+        background-color:#BD92CA;
+        top:25px;
+    }
+
+    #homepage #accueil {
+        left:60px;
+    }
+
+    #a-propos {
+        background-color:#342e37;
+        top:40px;
+    }
+
+    #a-propos-page #a-propos {
+        left:60px;
+        top:25px;
+    }
+
+    #realisations {
+        background-color:#ffb000;
+        top:60px;
+    }
+
+    #realisations-page #a-propos {
+        left:60px;
+        top:25px;
+    }
+
+    #prestations {
+        background-color:#3c91e6;
+        top:80px;
+    }
+
+    #prestations-page #a-propos {
+        left:60px;
+        top:25px;
+    }
+
+    #contact {
+        background-color:#e5a4cb;
+        top:100px;
+    }
+
+    #contact-page #a-propos {
+        left:60px;
+        top:25px;
+    }
+
+@media (min-device-width : 1008px){/* Toggle menu */
+}
+
+@media (min-device-width : 640px) and (max-device-width: 1007px){
+}
+
+@media (max-device-width: 639px){
+    .menu-item {
+        font-size:30px;
+        left:-200vw;
+    }
+
+    #toggle-menu {
+        padding-left:10px;
+    }
+
+    #homepage #accueil {
+        left:-200vw;
+    }
+
+    #a-propos {
+        
+    }
+
+    #realisations {
+
+    }
+}
