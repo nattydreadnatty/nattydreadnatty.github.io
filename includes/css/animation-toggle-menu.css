@@ -13,14 +13,14 @@
 @keyframes slideItemDot1 {
     to {
         transform:translateX(5px);
-        fill:#f6f5ae;
+        fill:#BD92CA;
     }
 }
 
 @keyframes slideItemDot2 {
     to {
         transform:translateX(5px);
-        fill:#e5a4cb;
+        fill:#342e37;
     }
 }
 
@@ -41,7 +41,7 @@
 @keyframes slideItemDot5 {
     to {
         transform:translateX(5px);
-        fill:#342e37;
+        fill:#e5a4cb;
     }
 }
 

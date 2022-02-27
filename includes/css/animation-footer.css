@@ -1,11 +1,11 @@
 @keyframes bounce {
-    0%   { transform: scale(1,1)      translateY(0); fill:#f6f5ae;}
+    0%   { transform: scale(1,1)      translateY(0); fill:#E7D8EA;}
     10%  { transform: scale(1.1,.9)   translateY(0); }
-    30%  { transform: scale(.9,1.1)   translateY(-25px); fill:#f6f5ae;}
+    30%  { transform: scale(.9,1.1)   translateY(-25px); fill:#E7D8EA;}
     50%  { transform: scale(1.05,.95) translateY(0); fill:#342e37;}
-    57%  { transform: scale(1,1)      translateY(-7px); fill:#f6f5ae;}
+    57%  { transform: scale(1,1)      translateY(-7px); fill:#E7D8EA;}
     64%  { transform: scale(1,1)      translateY(0); }
-    100% { transform: scale(1,1)      translateY(0); fill:#f6f5ae;}
+    100% { transform: scale(1,1)      translateY(0); fill:#E7D8EA;}
 }
 
 #social svg {

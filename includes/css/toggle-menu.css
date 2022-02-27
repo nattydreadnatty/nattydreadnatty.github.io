@@ -9,11 +9,11 @@
     }
 
     #toggle-menu #Ellipse_1:hover {
-        fill:#f6f5ae;
+        fill:#BD92CA; /* f6f5ae */
     }
 
     #toggle-menu #Ellipse_2:hover {
-        fill:#e5a4cb;
+        fill:#342e37;
     }
 
     #toggle-menu #Ellipse_3:hover {
@@ -25,7 +25,7 @@
     }
 
     #toggle-menu #Ellipse_5:hover {
-        fill:#342e37;
+        fill:#e5a4cb;
     }
 
     #menu-items-container {
@@ -48,7 +48,7 @@
     }
 
     #accueil {
-        background-color:#f6f5ae;
+        background-color:#BD92CA;
         top:25px;
     }
 
@@ -57,7 +57,7 @@
     }
 
     #a-propos {
-        background-color:#e5a4cb;
+        background-color:#342e37;
         top:40px;
     }
 
@@ -87,7 +87,7 @@
     }
 
     #contact {
-        background-color:#342e37;
+        background-color:#e5a4cb;
         top:100px;
     }
 
